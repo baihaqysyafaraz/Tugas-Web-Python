@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="project-page">
+    <h1 >Project selama 2 semester</h1>
+    <p >______________________________________________________________________________________________ </p>
+    <div class="project-container">
+        <h4 >1. NPM Tag</h4>
+        <div class="gallery">
+            <img src="{{ url_for ('static', filename='images/npm.jpg') }}" width="450">
+            <p> NPM Tag merupakan salah satu atribut wajib yang harus digunakan oleh mahasiswa baru prodi Teknik Elektro selama masa bimbingan berlangsung.</p>   
+        </div>
+    </div>
+    <div class="project-container">
+        <h4 >2. Olah Kreativitas dan Kewirausahaan</h4>
+        <div class="gallery">
+            <img src="{{ url_for ('static', filename='images/okk.jpg') }}" width="450">
+            <p> OKK merupakan salah satu matkul yang ditujukan pada mahasiswa semester 1 di Universitas Padjadjaran. Saya melakukan pengajaran kepada adik-adik kelas 2 di SDN Cikeruh II.</p>
+            
+        </div>
+    </div>
+    <div class="project-container">
+        <h4>3. Tugas Besar semester 1</h4>
+        <div class="gallery">
+            <img src="{{ url_for ('static', filename='images/tubes.jpg') }}" width="450">
+            <p> Tubes ini merupakan tugas akhir semester 1 dari matkul Pemrograman Dasar yang harus dikerjakan oleh mahasiswa. Saya membuat alat pendeteksi warna sederhana, yang mampu mendeteksi warna hijau, kuning, biru, putih, merah, orange. </p>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

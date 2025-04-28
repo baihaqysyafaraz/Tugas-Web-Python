@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #7d7d7d2f, #f0f0f0);
+    color: #2c2c2c;
+    line-height: 1.7;
+    text-align: justify ;
+}
+
+header {
+    background: white;
+    padding: 20px 40px;
+    border-bottom: 3px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    display: flex; /* Mengatur elemen dalam header menjadi fleksibel */
+    justify-content: space-between; /* Menempatkan elemen di kiri dan kanan */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    flex-wrap: nowrap; /* Mencegah elemen berpindah ke baris baru */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    white-space: nowrap; /* Mencegah teks "Baihaqy Syafaraz" terpotong atau berpindah baris */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Mengatur item navigasi dalam satu baris */
+    gap: 20px; /* Memberikan jarak antar item navigasi */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05);
+}
+
+.home-page {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-page {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.project-page {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-page {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-page h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: auto;
+}
+
+.contact-container {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-direction: column; /* Mengatur elemen di dalamnya secara vertikal */
+    justify-content: center; /* Memusatkan elemen secara vertikal */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    max-width: 300px; /* Lebar maksimum box */
+    margin:  auto; /* Memusatkan box secara horizontal */
+    padding: 20px; /* Memberikan ruang di dalam box */
+    background-color: #c2c0c02f; /* Warna latar belakang box */
+    border-radius: 16px; /* Membuat sudut box melengkung */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+button, .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #555;
+}
+
+.home-container {
+    max-width: auto ;
+    margin: auto;
+    padding: 20px;
+    background-color: #c2c0c02f;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.profile-container {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 4px solid #ddd; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}   
+
+.profile-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+    gap: 10px; /* Memberikan jarak antara gambar dan teks */
+    margin-bottom: 10px; /* Memberikan jarak antar item */
+}
+
+.contact-image {
+    width: 50px; /* Ukuran gambar */
+    height: 50px;
+    border-radius: 10%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+}
+
+.contact-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+    color: #000000;
+}
+.gallery {
+    display: flex; /* Mengatur elemen gambar dan teks dalam satu baris */
+    align-items: flex-start; /* Menyelaraskan elemen di bagian atas */
+    gap: 20px; /* Memberikan jarak antara gambar dan teks */
+    margin-bottom: 40px;
+    text-align: justify; /* Menyelaraskan teks ke kiri */
+}
+
+.gallery img {
+    width: 200px; /* Ukuran gambar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-page h1 {
+    text-align: center;
+    margin-bottom: auto;
+    font-size: 2.3rem;
+}
+
+.project-page h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-page p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.project-container {
+    padding: 40px;
+    background-color: #c2c0c02f;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.about-page h1 {
+    text-align: center;
+    margin-bottom: auto;
+    font-size: 2.3rem;
+}
+
+.about-container {
+    padding: 40px;
+    background-color: #c2c0c02f;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 10px auto;
+    max-width: 1000px;
+}

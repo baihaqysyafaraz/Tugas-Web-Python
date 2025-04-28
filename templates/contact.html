@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="contact-page">
+    <h1>Kontak</h1>
+    <div class="contact-container">
+        <h3>Email</h3>
+        <p> baiihaqyy@gmail.com</p>
+        <h3>Phone</h3>
+        <p> +63-877-8381-7522</p>
+        <h3>Instagram</h3>
+        <div class="contact-item">
+            <a href="https://www.instagram.com/bhq.syfrz/" target="_blank">
+                <img src="{{ url_for('static', filename='images/instagram.jpeg') }}" alt="Instagram" class="contact-image">
+                <div class="contact-text">
+                bhq.syfrz</a>
+                </div>
+        </div>
+        <h3>LinkedIn</h3>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/baihaqy-syafaraz-789415329/" target="_blank">
+                <img src="{{ url_for('static', filename='images/linkedin.jpeg') }}" alt="LinkedIn" class="contact-image">
+                <div class="contact-text">
+                    Baihaqy Syafaraz</a>
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

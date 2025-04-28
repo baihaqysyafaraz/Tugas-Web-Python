@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="about-page">
+    <h1 >Perkenalan singkat tentang saya </h1>
+    <p >______________________________________________________________________________________________________________________________ </p>
+    <p >Halo! Perkenalkan nama aku Baihaqy Syafaraz, aku merupakan mahasiswa aktif Prodi Teknik Elektro Universitas Padjadjaran. Aku lahir di Bekasi pada tanggal 19 Juli 2006, aku merupakan anak pertama dari dua bersaudara. Tempat tinggal ku berada di Jawa Barat, tepatnya di Gunungputri, Kabupaten Bogor. Aku merupakan lulusan dari SMA Negeri 2 Gunungputri. Aku memiliki beberapa hobi di antaranya mendengarkan musik, bermain gitar, dan merakit sebuah model kit. Salah satu cita-cita yang ingin aku gapai adalah menjadi Direktur Utama Pertamina.</p>
+    <p >Di perkuliahan ini selain aku belajar tentang ilmu-ilmu mengenai Teknik Elektro, aku juga belajar banyak hal lainnya. Dengan mengikuti organisasi dan beberapa kepanitiaan, aku mendapat banyak pelajaran seperti belajar menjadi pemimpin, berkomunikasi secara efektif kepada sesama orang, memanajemen waktu, dan masih banyak lainnya.</p>
+    <h2 >Kegiatan-kegiatan yang saya ikuti selama 2 semester di perkuliahan : </h2>
+    <div class="about-container">
+        <h4 >1. Kepala Divisi Logistik Archinoda 2024 </h4>
+        <div class="gallery">
+            <img src= "{{ url_for ('static', filename='images/archinoda.jpg') }}" height="350"> 
+            <p >Menjadi kepala divisi logistik pada acara Archinoda merupakan pertama kalinya saya ikut kepanitiaan sekaligus menjadi pemimpin dalam kepanitiaan. Menurut saya ini adalah momen yang tak bisa terlupakan dalam hidup saya, karena saya mendapat pengalaman baru yang tidak saya dapat saat SMA. </p>
+        </div>
+    </div>
+    <div class="about-container">
+        <h4 >2. Volunteer Social Media and Documentation FUTURA 2024 </h4>
+        <div class="gallery">
+            <img src= "{{ url_for ('static', filename='images/futura.jpg') }}" height="350"> 
+            <p >Setelah melaksanakan kepanitiaan Archinoda, kepanitian kedua yang aku ikuti adalah menjadi volunteer social media and documentation dalam acara FUTURA 2024. Acara FUTURA 2024 ini merupakan acara tahunan yang diselenggarakan oleh Himpunan Mahasiswa Teknik Elektro, yang mana berisi talkshow dari pembicara-pembicara hebat, hiburan, dan juga pameran. </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
