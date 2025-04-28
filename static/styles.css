@@ -10,10 +10,16 @@ body {
     color: #2c2c2c;
     line-height: 1.7;
     text-align: justify ;
+    padding-top: 80px;
 }
 
 header {
-    background: white;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background: white; 
     padding: 20px 40px;
     border-bottom: 3px solid #ddd;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
